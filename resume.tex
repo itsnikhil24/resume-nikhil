@@ -7,10 +7,10 @@
 \usepackage{marvosym}
 \usepackage{verbatim}
 \usepackage{enumitem}
-\usepackage{fontawesome5} % for using icons
+\usepackage{fontawesome5} % for icons
 \usepackage[pdftex]{hyperref}
 \usepackage{fancyhdr}
-\usepackage{graphicx} % for reflecting the phone icon
+\usepackage{graphicx}
 
 % Define custom colors
 \definecolor{primaryColor}{RGB}{0, 79, 144}
@@ -31,7 +31,7 @@
 
 % Page style adjustments
 \pagestyle{fancy}
-\fancyhf{} % Clear all header and footer fields
+\fancyhf{}
 \fancyfoot{}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
@@ -48,7 +48,7 @@
 \raggedright
 \setlength{\tabcolsep}{0in}
 
-% Sections formatting
+% Section formatting
 \titleformat{\section}{
   \vspace{-10pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
@@ -59,13 +59,11 @@
     \textbf{#1}{: #2 \vspace{-2pt}}
   }
 }
-
 \newcommand{\resumeItemWithoutTitle}[1]{
   \item\small{
     {#1 \vspace{-2pt}}
   }
 }
-
 \newcommand{\resumeSubheading}[4]{
   \vspace{-1pt}\item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
@@ -73,7 +71,6 @@
       \textit{#3} & \textit{#4} \\
     \end{tabular*}\vspace{-5pt}
 }
-
 \newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-3pt}}
 \renewcommand{\labelitemii}{$\circ$}
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
@@ -89,57 +86,40 @@
     \MYhref{tel:+918968491353}{\reflectbox{\faPhone}\ +91-8968491353} \quad  
     \MYhref{https://maps.app.goo.gl/rMSBQRqs4LkHJ8Jf6}{\faMapMarker*\ Chandigarh, India} \\ \vspace{5pt}
     \MYhref{mailto:nikhils.sharma2409@gmail.com}{\faEnvelope\ nikhils.sharma2409@gmail.com} \quad 
-    \MYhref{https://github.com/itsnikhil24}{\faGithub\ github.com/itsnikhil24} \quad 
-    \MYhref{https://www.linkedin.com/in/nikhil-sharma-487837290/}{\faLinkedin\ linkedin.com/in/itsnikhil24}    
+    \MYhref{https://github.com/itsnikhil24/}{\faGithub\ github.com/itsnikhil24} \quad 
+    \MYhref{https://www.linkedin.com/in/itsnikhil24}{\faLinkedin\ linkedin.com/in/itsnikhil24}    
 \end{center}
 \vspace{-6pt}
 
+
+
+%----------EXPERIENCE-----------------
 \section{Experience}
 \vspace{2pt}
 \resumeSubHeadingListStart
 
 \resumeSubheading
 {Diskovalist}{Remote}
-{IT Intern }{June 2025 - Sep 2025}
-\begin{itemize}
-
-   \item {Developed full-stack features using Next.js, TypeScript, and PostgreSQL, building reusable APIs and structured schemas to streamline frontend–backend integration.}
-\item {Implemented robust schema validation with Zod and custom React hooks, improving code reusability, type safety, and maintainability across the project.}
-\item {Automated data extraction workflows by parsing PDFs with regex and storing structured records in Supabase, enhancing efficiency of data management processes.}
-
-
-\end{itemize}
-\vspace{-10pt}
-
-
-
-
-
-
-
-% \resumeItemListEnd
-\resumeSubHeadingListEnd
-
-\resumeSubHeadingListStart
+{IT Intern}{June 2025 -- September 2025}
+\resumeItemListStart
+   \item {Developed full-stack features using Next.js, TypeScript, and Supabase, building reusable APIs and structured schemas to streamline frontend–backend integration.}
+   \item {Implemented robust schema validation with Zod and custom React hooks, improving code reusability, type safety, and maintainability across the project.}
+   \item {Automated data extraction workflows by parsing PDFs with regex and storing structured records in Supabase, enhancing efficiency of data management processes.}
+\resumeItemListEnd
 
 \resumeSubheading
 {Beyond Career}{Remote}
-{SDE Intern }{February 2025 - March 2025}
-\begin{itemize}
+{SDE Intern}{February 2025 -- March 2025}
+\resumeItemListStart
+   \item {Implemented Google Sign-In authentication on login and registration pages, enhancing user onboarding experience and security.}
+   \item {Organized the codebase using the MVC (Model-View-Controller) pattern, ensuring better scalability and maintainability.}
+   \item {Designed and developed RESTful APIs using Node.js and Express.js, enabling seamless communication between frontend interfaces and backend services.}
+\resumeItemListEnd
 
-    \item {Implemented Google Sign-In authentication on login and registration pages, enhancing user onboarding experience and security.}
-	\item { Organized the codebase using the MVC (Model-View-Controller) pattern, ensuring better scalability and maintainability.}
-	\item {Designed and developed RESTful APIs using Node.js and Express.js, enabling seamless communication between frontend interfaces and backend services.}
-\end{itemize}
-
-% \resumeItemListEnd
 \resumeSubHeadingListEnd
-
 
 %----------PROJECTS-----------------
 \section{Projects}
-
-
 \resumeSubHeadingListStart
 
 \resumeSubheading
@@ -147,60 +127,56 @@
   {January 2025} 
   {HTML, CSS, JavaScript, Node.js, Express, MongoDB} 
   {}
-
-
 \resumeItemListStart
     \item \textbf{Emphasis:} ChatSphere is a real-time chat app using Node.js, Express, and Socket.IO for instant messaging. It features JWT authentication, MongoDB storage, Cloudinary media sharing, and an MVC architecture for scalability.
-    \item \textbf{Features:} Utilized technologies such as EJS, CSS, and JavaScript to create a responsive and user-friendly interface.
+    \item \textbf{Features:}
     \begin{itemize}
-        \item Real-Time Messaging – Powered by Socket.IO, users can send and receive messages instantly.
-        \item Room-based Chat – Users can join specific chat rooms for focused discussions
-        \item Express.js Backend – Built with MVC architecture for clean and scalable code.
+        \item Real-Time Messaging – Powered by Socket.IO for instant communication.
+        \item Room-based Chat – Users can join dedicated chat rooms.
+        \item Express.js Backend – Built using MVC for clean, maintainable code.
     \end{itemize}
 \resumeItemListEnd
 
 \resumeSubheading{\MYhref{https://github.com/itsnikhil24/Floodmanagement.git}{Farm Flood Aid} \MYhref[red]{https://flood-management-website.vercel.app/}{[Website]}}{October 2024}{HTML, CSS, JavaScript, Node.js, Express, MongoDB}{}
-
 \resumeItemListStart
-    \item \textbf{Emphasis:} Developed and deployed a Flood Management website to assist farmers in Myanmar during severe flood conditions. Implemented features like a chatbot for support, a marketplace for surplus crop sales, and NGO contact information.
-    \item \textbf{Features:} Utilized technologies such as HTML, CSS, and JavaScript to create a responsive and user-friendly interface.
+    \item \textbf{Emphasis:} Developed and deployed a Flood Management website to assist farmers in Myanmar during severe flood conditions. Included chatbot support, marketplace, and NGO contact access.
+    \item \textbf{Features:}
     \begin{itemize}
-        \item Implemented a chatbot to provide real-time assistance on flood management, waterlogging reduction, and contact information.
-        \item Designed a marketplace for farmers to sell surplus crops, reducing wastage and fostering collaboration with NGOs.
-        \item Integrated NGO contact information to ensure farmers can easily access aid and support during emergencies.
+        \item Real-time chatbot to assist with flood management and support.
+        \item Marketplace for farmers to sell surplus crops.
+        \item Integrated NGO contact system for emergency aid.
     \end{itemize}
 \resumeItemListEnd
 
-
-
-
 \resumeSubHeadingListEnd
 
-%-----------SKILLS--------------------
+%----------TECHNICAL SKILLS-----------------
 \section{Technical Skills}
 \resumeSubHeadingListStart
-\resumeSubItem{Languages}{C, C++, JavaScript, Python}
+\resumeSubItem{Languages}{C, C++, JavaScript, Python, TypeScript}
 \resumeSubItem{Tools}{Git, GitHub Actions, Google Cloud, MongoDB, MySQL, AWS, Firebase, Supabase}
-\resumeSubItem{Frameworks/Libraries}{Node.js, Express, React}
+\resumeSubItem{Frameworks/Libraries}{Node.js, Express, React, Next.js}
 \resumeSubHeadingListEnd
 
-%-----------ACHIEVEMENTS-----------------
+%----------ACHIEVEMENTS-----------------
 \section{Achievements}
 \resumeSubHeadingListStart
 \item Community Impact Award Winner at the Myanmar Flood Response Hackathon hosted on Devpost for the project "FarmFloodAid".
-\item HackerRank level 5 C++ Programmer.
-{\MYhref{https://www.hackerrank.com/nikhils_sharma21}{HackerRank Profile}}
-\item Postman Fundamental Student Expert.
-\item Google Cloud Arcade Program Participant: Completed 150 labs in the Google Cloud Arcade program.
-\item Attained the badge of {\MYhref{https://www.cloudskillsboost.google/public_profiles/158ff43d-244d-49d7-9269-b6014d626472}{Google Cloud Skill badge}}.
-\resumeSubHeadingListEnd
+\item {Microsoft Certified: Azure Fundamentals (AZ-900)} 
+      --- Scored \textbf{928/1000} 
+      \MYhref{https://www.credly.com/badges/e80e0f91-bf4f-4cc1-b983-bd1ec2911c2c/}{[View Credential]}
 
-%-----------EDUCATION-----------------
+\item Postman Student Expert.
+\item Google Cloud Arcade Program Participant — Completed 150 labs.
+\resumeSubHeadingListEnd
+%----------EDUCATION-----------------
 \section{Education}
 \resumeSubHeadingListStart
 \resumeSubheading{Chandigarh University}{Mohali, Punjab}{Bachelor of Engineering - Computer Science; CGPA: 8.77}{September 2023 -- Expected June 2027}
 \resumeSubheading{Govt. Model Sr. Sec School, 37-B}{Chandigarh}{Secondary School Education (Science); Percentage: 76}{July 2021 -- May 2023}
 \resumeSubheading{Stepping Stones Sr. Sec. School, 37-D}{Chandigarh}{High School Education; Percentage: 89.9}{July 2007 -- April 2021}
 \resumeSubHeadingListEnd
+\vspace{-6pt}
+
 
 \end{document}
